@@ -1,0 +1,17 @@
+{
+  "name": "HjtCordova",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "HjtCordova",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
