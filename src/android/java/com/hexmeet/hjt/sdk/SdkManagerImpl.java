@@ -84,6 +84,7 @@ public class SdkManagerImpl implements SdkManager {
         LOG.info("initSDK");
         Context appContext = HjtApp.getInstance().getContext();
         engine = EVFactory.createEngine();
+        LOG.info("init engine ->" + engine.toString());
         CopyAssets.getInstance().createAndStart(appContext);
         String path = appContext.getFilesDir().getAbsolutePath();
         engine.setLog("EasyVideo", path, "evsdk", 1024 * 1024 * 10);
@@ -221,7 +222,8 @@ public class SdkManagerImpl implements SdkManager {
 
     @Override
     public boolean isCalling() {
-        return  engine.getCallInfo()!=null;
+       LOG.info("isCalling engine = null?  "+ (engine == null), new Exception());
+       return  engine.getCallInfo()!=null;
     }
 
     @SuppressLint("StringFormatInvalid")

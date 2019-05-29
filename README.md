@@ -3,8 +3,13 @@
 ## 快速开始
 
 - 本插件是基于会捷通 SDK 封装的 Cordova 插件，目前只提供 Android 版本
+
 - 本插件的 demo 工程代码在 [https://github.com/hexmeet/cordova-demo-HJT-SDK-Android.git](https://github.com/hexmeet/cordova-demo-HJT-SDK-Android.git)， 有关 demo 工程和本插件的使用方法请参考其中的 README 文件
+
 - 在 demo 工程中，添加 HJT Plugin 后，需要手工修改一下 Android 工程目录中的 build.gradle 文件
+
+- 建议使用 Cordova 8.1.2 版本（9.0 以上版本暂不支持）
+
 
 #### 打开文件 paltforms / android / app / build.gradle
 
@@ -68,4 +73,4 @@ dependencies {
 }
 ```
 
-> Last Updated: Tue May 28 21:54:49 CST 2019 (8c9c79676c2b9713dbb3a7639670aae203bae7c2)
+> Last Updated: Wed May 29 19:20:17 CST 2019 (e6b555b9cc0dcd27be67c7e9290038e5ff2fd0d6)
