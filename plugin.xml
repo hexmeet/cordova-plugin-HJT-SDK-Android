@@ -20,6 +20,7 @@
 		
 		
 		
+		
 		<!-- permission-->
 		<config-file target="AndroidManifest.xml" parent="/*">
 			<uses-feature
@@ -83,7 +84,7 @@
 				android:required="false" />
 		</config-file>
 		
-		
+		<hook type="after_plugin_install" src="src/scripts/android_package.js" /> 
 		
 		<!-- Activity-->
 		 <config-file target="AndroidManifest.xml" parent="/manifest/application"> 
@@ -141,7 +142,6 @@
 
 			<provider
 				android:name="android.support.v4.content.FileProvider"
-				android:authorities="hexmeet.fileprovider"
 				android:exported="false"
 				android:grantUriPermissions="true">
 				<meta-data
