@@ -8,7 +8,7 @@
 
 - 在 demo 工程中，添加 HJT Plugin 后，需要手工修改一下 Android 工程目录中的 build.gradle 文件
 
-- Cordova最新支持8.1.2（9.0以上暂不支持）
+- 建议使用 Cordova 8.1.2 版本（9.0 以上版本暂不支持）
 
 
 #### 打开文件 paltforms / android / app / build.gradle
