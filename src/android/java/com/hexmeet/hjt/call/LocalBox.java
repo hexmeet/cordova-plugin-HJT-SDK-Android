@@ -70,8 +70,7 @@ public class LocalBox {
         textView.setTextColor(Color.WHITE);
         textView.setPadding(3, 0, 3, 2);
         textView.setMaxLines(1);
-        textView.setTextSize(12);
-        textView.setText(SystemCache.getInstance().isAnonymousMakeCall() ? SystemCache.getInstance().getJoinMeetingParam().getDisplayName() : SystemCache.getInstance().getLoginResponse().getDisplayName());
+        textView.setText(R.string.tab_me);
 
         infoContainer.addView(textView);
     }
