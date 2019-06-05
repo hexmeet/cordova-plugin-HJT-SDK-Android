@@ -222,7 +222,8 @@ public class SdkManagerImpl implements SdkManager {
 
     @Override
     public boolean isCalling() {
-       LOG.info("isCalling engine = null?  "+ (engine == null), new Exception());
+        //+ (engine == null), new Exception()
+       LOG.info("isCalling engine = null? ");
        return  engine.getCallInfo()!=null;
     }
 

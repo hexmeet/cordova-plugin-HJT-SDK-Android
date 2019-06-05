@@ -12,14 +12,14 @@
 		  </feature>
 		</config-file>
 		
+
 		
-		<hook type="after_plugin_install" src="src/scripts/andorid_application.js" />
 		<hook type="after_plugin_install" src="src/scripts/android_socket.js" />
 		<hook type="after_plugin_install" src="src/scripts/android_project_buildGradle.js" /> 
 		<hook type="after_plugin_install" src="src/scripts/android_app_buildGradle.js" /> 
+			
 		
-		
-		
+	
 		
 		<!-- permission-->
 		<config-file target="AndroidManifest.xml" parent="/*">
@@ -84,7 +84,8 @@
 				android:required="false" />
 		</config-file>
 		
-		<hook type="after_plugin_install" src="src/scripts/android_package.js" /> 
+				
+	
 		
 		<!-- Activity-->
 		 <config-file target="AndroidManifest.xml" parent="/manifest/application"> 
@@ -140,14 +141,15 @@
 				android:name="com.alibaba.app.appsecret"
 				android:value="751537cc99f15855a91ee57e037e50a4" />
 
-			<provider
+			<!--  <provider
+		
 				android:name="android.support.v4.content.FileProvider"
 				android:exported="false"
 				android:grantUriPermissions="true">
 				<meta-data
 					android:name="android.support.FILE_PROVIDER_PATHS"
 					android:resource="@xml/evsdk_file_paths" />
-			</provider>
+			</provider> --> 
 
 			<receiver android:name="com.hexmeet.hjt.PhoneStateChangedReceiver">
 				<intent-filter>
@@ -156,6 +158,8 @@
 			</receiver>
 		</config-file>
 		
+		<hook type="after_plugin_install" src="src/scripts/andorid_application.js" />
+		 
 		
 		
 		<!--java-->
