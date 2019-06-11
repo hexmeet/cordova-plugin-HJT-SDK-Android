@@ -36,7 +36,7 @@ public class HjtCordova extends CordovaPlugin {
             if(!EventBus.getDefault().isRegistered(this)){
                 EventBus.getDefault().register(this);
             }
-            if(PermissionWrapper.getInstance().checkMeetingPermission(cordova.getActivity())) {
+            if(PermissionWrapper.getInstance().checkStoragePermission(cordova.getActivity())) {
                 HjtApp.getInstance().initLogs();
                 HjtApp.getInstance().getAppService().reloadHardware();
             }
