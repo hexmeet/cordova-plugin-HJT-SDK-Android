@@ -504,10 +504,8 @@ public class Conversation extends FullscreenActivity {
         if(event.isMuteFromMru()) {
             Log.i("Indication ；conv  ",event.isMuteFromMru()+"");
             Toast.makeText(Conversation.this, R.string.speaking_forbidden, Toast.LENGTH_SHORT).show();
-            videoBoxGroup.updateLocalMute(true);
         } else {
             Toast.makeText(Conversation.this, R.string.allowed_speak, Toast.LENGTH_SHORT).show();
-            videoBoxGroup.updateLocalMute(false);
         }
         if(controller != null) {
             controller.updateHandUpMenu(event.isMuteFromMru());
