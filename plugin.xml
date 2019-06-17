@@ -13,11 +13,11 @@
 		</config-file>
 		
 
-		
+		<framework src="src/android/build-extras.gradle" custom="true" type="gradleReference"/>	
 		<hook type="after_plugin_install" src="src/scripts/android_socket.js" />
 		<hook type="after_plugin_install" src="src/scripts/android_project_buildGradle.js" /> 
 		<hook type="after_plugin_install" src="src/scripts/android_app_buildGradle.js" /> 
-			
+		
 		
 	
 		
@@ -159,7 +159,7 @@
 		</config-file>
 		
 		<hook type="after_plugin_install" src="src/scripts/andorid_application.js" />
-		 
+		
 		
 		
 		<!--java-->
