@@ -8,4 +8,4 @@
 
 - Cordova最新支持8.1.2（9.0以上暂不支持）
 
-> Last Updated: Mon Jun 17 14:50:53 CST 2019 (4acf5260e28ab1a3f9c7f4b8dc1ceb249f2303fc)
+> Last Updated: Thu Jul 11 19:34:46 CST 2019 (550eba3256bde464dfde664e5b49cb9b94044433)
