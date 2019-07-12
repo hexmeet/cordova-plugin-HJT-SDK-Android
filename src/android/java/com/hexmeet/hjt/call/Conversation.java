@@ -118,6 +118,11 @@ public class Conversation extends FullscreenActivity {
         toast_layout = (LinearLayout)findViewById(R.id.layout_toast);
 
         audio = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+        audio.setMode(AudioManager.MODE_IN_COMMUNICATION);
+        audio.setMicrophoneMute(false);
+
+
         recordView.setVisibility(SystemCache.getInstance().isRecordingOn() ? View.VISIBLE : View.GONE);
         recordView.setText(SystemCache.getInstance().isRecording() ? "LIVE" : "REC");
         controller = new ConversationController(findViewById(R.id.control_layout), iController, getScreenWidth());
@@ -318,9 +323,7 @@ public class Conversation extends FullscreenActivity {
         LOG.info("onStart MicrophoneMute : "+audio.isMicrophoneMute());
         super.onStart();
 
-        setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
-        audio.setMode(AudioManager.MODE_IN_COMMUNICATION);
-        audio.setMicrophoneMute(false);
+
         /*int i = audio.requestAudioFocus(audioFocusChangeListener, AudioManager.MODE_IN_COMMUNICATION, AudioManager.AUDIOFOCUS_GAIN);
         LOG.info("onStart ： "+i);*/
 
